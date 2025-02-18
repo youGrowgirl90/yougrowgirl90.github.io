@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Celebration Invitation</title>
+  <style>
+    :root {
+      --primary: #1e40af;
+      --secondary: #0369a1;
+      --accent: #0891b2;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --background: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .poster {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      padding: 3rem 1.5rem;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .content {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem;
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+    
+    h1 {
+      text-align: center;
+      font-size: 2.25rem;
+      color: var(--primary);
+      margin: 0 0 2rem;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+    
+    .event-title {
+      text-align: center;
+      font-size: 1.875rem;
+      color: var(--secondary);
+      margin: 1.5rem 0;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+    
+    .venue {
+      text-align: center;
+      font-size: 1.25rem;
+      color: var(--accent);
+      margin-bottom: 3rem;
+      font-weight: 500;
+    }
+    
+    .section {
+      margin-bottom: 2.5rem;
+      padding-bottom: 0.5rem;
+    }
+    
+    .section:not(:last-child) {
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .section-title {
+      font-size: 1.125rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+      text-transform: uppercase;
+    }
+    
+    .info-box {
+      background: #f8fafc;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    
+    .important-notice {
+      background: #fee2e2;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    
+    .details-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0;
+    }
+    
+    .details-list li {
+      margin-bottom: 0.75rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    
+    .details-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0.5rem;
+      color: var(--accent);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-light);
+      font-size: 0.875rem;
+    }
+    
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    
+    .footer a:hover {
+      color: var(--secondary);
+    }
+    
+    .rsvp-note {
+      text-align: center;
+      font-weight: 600;
+      color: var(--primary);
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: #f0f9ff;
+      border-radius: 8px;
+    }
+    
+    @media (max-width: 640px) {
+      .content {
+        padding: 2rem 1.5rem;
+      }
+      
+      h1 {
+        font-size: 1.875rem;
+      }
+      
+      .event-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <div class="content">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <svg viewBox="0 0 400 300" width="150" height="120" style="margin: 0 auto;">
+          <!-- Main splash -->
+          <path d="M200 50 
+                   C 240 80, 280 90, 300 70
+                   C 320 50, 290 20, 270 40
+                   C 250 60, 220 50, 200 50
+                   C 180 50, 150 60, 130 40
+                   C 110 20, 80 50, 100 70
+                   C 120 90, 160 80, 200 50" 
+                fill="#60a5fa" opacity="0.8"/>
+          
+          <!-- Droplets -->
+          <circle cx="150" cy="30" r="8" fill="#93c5fd"/>
+          <circle cx="250" cy="30" r="8" fill="#93c5fd"/>
+          <circle cx="120" cy="60" r="6" fill="#93c5fd"/>
+          <circle cx="280" cy="60" r="6" fill="#93c5fd"/>
+          
+          <!-- Ripples -->
+          <path d="M160 180 C200 170, 240 170, 280 180" fill="none" stroke="#bfdbfe" stroke-width="3"/>
+          <path d="M120 200 C160 190, 200 190, 240 200" fill="none" stroke="#bfdbfe" stroke-width="3"/>
+          <path d="M140 220 C180 210, 220 210, 260 220" fill="none" stroke="#bfdbfe" stroke-width="3"/>
+          
+          <!-- Water surface -->
+          <path d="M50 250 C150 240, 250 240, 350 250 L350 300 L50 300 Z" fill="#3b82f6"/>
+        </svg>
+      </div>
+
+      <h1>Join Us for a Splash-tastic Celebration!</h1>
+      
+      <div class="section">
+        <p class="venue">You're Invited to</p>
+        <h2 class="event-title">ZION'S 8TH BIRTHDAY CELEBRATION</h2>
+        <p class="venue">at The Tropics Indoor Waterpark</p>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Event Details</div>
+        <div class="info-box">
+          <p><strong>Date:</strong> Saturday, February 22, 2025</p>
+          <p><strong>Time:</strong> 1:00 PM - Check-in and wristband distribution<br>
+          1:30 PM - 7:00 PM - Waterpark access</p>
+          <p><strong>Location:</strong><br>
+          Shoreview Community Center<br>
+          4600 Victoria Street North<br>
+          Shoreview, MN 55126</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Admission Information</div>
+        <div class="important-notice">
+          <p><strong>Entry Fees:</strong></p>
+          <ul class="details-list">
+            <li>Invited children's admission will be covered by the host family</li>
+            <li>All accompanying adults must pay $15 per person</li>
+            <li>Siblings of invited children must pay $12 per child</li>
+            <li>Payment is required upon arrival</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Food & Refreshments</div>
+        <div class="important-notice">
+          <p><strong>Please Note:</strong> No food or refreshments will be provided at the party.</p>
+          <p>We recommend:</p>
+          <ul class="details-list">
+            <li>Bringing snacks and drinks for your family</li>
+            <li>Packing water bottles</li>
+            <li>Planning for meals based on your intended length of stay</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">What to Bring</div>
+        <ul class="details-list">
+          <li>Swimsuit and towel</li>
+          <li>Change of clothes</li>
+          <li>Food and drinks as needed</li>
+          <li>Locker rentals are available for storing personal items</li>
+        </ul>
+      </div>
+
+      <div class="rsvp-note">
+        Please RSVP by February 21st<br>
+        <span style="font-size: 0.9em; font-weight: normal; color: var(--text-light);">
+          Let us know the number of children and adults attending
+        </span>
+      </div>
+
+      <div class="footer">
+        <p>For venue information, please visit the <a href="https://www.shoreviewmn.gov/parks-rec/community-center" target="_blank" rel="noopener noreferrer">Shoreview Community Center website</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
